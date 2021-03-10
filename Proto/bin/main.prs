@@ -1,0 +1,14 @@
+main():
+    mov x, 12;
+    ja x, nuum345, L0;
+    call L0();
+    fin;
+L0():
+    call print(x);
+    ret main(), 0;
+    fin;
+print(word):
+    pop word;
+    msg word;
+    ret print(word), 0;
+    fin;
